@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-color:#0d84df;
+  }
+  
+  h1 {
+    text-align: center;
+    color:rgb(235, 15, 15);
+    background-color:#f8a81a;
+    border-radius: 30px;
+    width: 350px;
+  }
+  
+  .head,
+  .left_arm,
+  .torso,
+  .right_arm,
+  .left_leg,
+  .right_leg {
+    background-color: #ed5833;
+    color: #ed5833;
+    border-color: #f1f50a;
+    border-style: solid;
+  }
+  
+  .head {
+    width: 200px;
+    margin: 0 auto;
+    height: 160px;
+    border-radius: 250px 250px 0 0;
+    margin-bottom: 10px;
+    color:hsl(38, 94%, 54%);
+  }
+  
+  .eyes {
+    position: absolute;
+    top: 180px;
+    color: #f8a81a;
+  }
+  
+  .left_eye,
+  .right_eye {
+    width: 25px;
+    height: 25px;
+    border-radius: 200px;
+    background-color: white;
+    display: inline-block;
+  }
+  
+  .left_eye {
+    margin-left: 25px;
+    transition: transform 2s ease-in-out;
+  }
+  
+  .right_eye {
+    margin-left: 100px;
+    transition: transform 2s ease-in-out;
+  }
+  
+  .upper_body {
+    width: 300px;
+    height: 190px;
+    margin: 0 auto;
+    display: flex;
+    color: #ed5833;
+    transition: transform 2.0s ;
+  }
+  
+  .left_arm,
+  .right_arm {
+    width: 80px;
+    height: 170px;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  
+  .left_arm {
+    margin-right: 10px;
+  }
+  
+  .left_arm {
+    margin-right: 10px;
+    transition: transform 2.0s ;
+  }
+  
+  .right_arm {
+    margin-left: 10px;
+    transition: transform 2.0s ;
+  }
+  
+  .torso {
+    width: 400px;
+    height: 230px;
+    border-radius: 0 0 50px 50px;
+    transition: border-radius 1s;
+    color: #ed5833;
+  }
+  
+  .lower_body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    color: #ed5833;
+  }
+  
+  .left_leg,
+  .right_leg {
+    width: 40px;
+    height: 170px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+  }
+  
+  .left_leg {
+    margin-left: 45px;
+    transition: transform 2.0s ;
+  }
+  
+  .right_leg {
+    margin-left: 30px;
+    transition: transform 2.0s ;
+  }
+  .robots:hover .left_arm {
+    transform: rotate(180deg);
+    animation: moveleftarm 1s infinite;
+  }
+  
+  .robots:hover .right_arm {
+    transform: rotate(180deg);
+    animation: moverightarm 1s infinite;
+  }
+  
+  .robots:hover .left_leg {
+    transform: rotate(180deg);
+    animation: moveleftleg 2s infinite;
+  }
+  
+  .robots:hover .right_leg {
+    transform: rotate(180deg);
+    animation: moverightleg 2s infinite;
+  }
+
